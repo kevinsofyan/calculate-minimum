@@ -6,12 +6,12 @@ import { shallow } from "enzyme";
 describe("Result", () => {
     let {component} = {};
     beforeAll(() => {
-        component = shallow(<Result inputNumber={12510} fraction={mockFraction}/>);
+        component = shallow(<Result inputNumber={12510} fraction={mockFraction['sample3']}/>);
     });
 
     it('should render component correctly', () => {
         expect(component.find('.result-number').text()).toEqual("12510");
-        expect(component.find('li').length).toEqual(mockFraction.length);
+        expect(component.find('li').length).toEqual(mockFraction['sample3'].length);
     });
 
     it('should render result list correctly', () => {

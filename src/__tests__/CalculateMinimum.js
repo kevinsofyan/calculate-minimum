@@ -56,10 +56,14 @@ describe("CalculateMinimum", () => {
     });
 
     it('should successfully calculate minimum number needed to make inputed amount', () => {
-        const number = "Rp 12510";
-        numberInput.simulate('change', {target: {value: number }});
-        form.simulate('submit', { preventDefault () {} });
-        expect(component.state().fraction).toEqual(mockFraction);
+        let number = ["Rp 15000","3900","Rp 12510"];
+        for (let i=0;i<number.length;i++){
+            numberInput.simulate('change', {target: {value: number[i] }});
+            form.simulate('submit', { preventDefault () {} });
+            expect(component.state().fraction).toEqual(mockFraction[`sample${i+1}`]);
+        }
     });
 })
+
+
 
