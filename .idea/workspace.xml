@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96190c82-d5b2-40a5-a622-3790e94e1162" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CalculateMinimum/calculateFraction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CalculateMinimum/calculateFraction.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,8 +42,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/CalculateMinimum/calculateFraction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="80" lean-forward="true" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="80" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
                 </state>
               </provider>
             </entry>
@@ -293,7 +292,7 @@
       <workItem from="1564633069537" duration="597000" />
       <workItem from="1565002298904" duration="594000" />
       <workItem from="1565066024239" duration="4383000" />
-      <workItem from="1565100416012" duration="25896000" />
+      <workItem from="1565100416012" duration="29278000" />
     </task>
     <servers />
   </component>
@@ -312,7 +311,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52647000" />
+    <option name="totallyTimeSpent" value="56029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -457,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CalculateMinimum/calculateFraction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="80" lean-forward="true" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="80" />
+        <state relative-caret-position="225">
+          <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
         </state>
       </provider>
     </entry>
