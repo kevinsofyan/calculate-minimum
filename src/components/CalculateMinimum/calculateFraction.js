@@ -4,14 +4,13 @@ export function calculateFraction(inputNumber) {
     let fraction = [];
 
     for (let i= 0; i < divider.length; i++) {
-        const countNumber = number / divider[i];
+        const countNumber = Math.floor(number / divider[i]);
 
         if(divider[i] <= number) {
             if (i === divider.length - 1 && number !==0) {
-                if (number % divider[i] === 0) {
-                    number = (divider[i] * countNumber) - number;
-                    fraction.push(createFraction(countNumber,divider[i]));
-                }
+                number = (divider[i] * countNumber) - number;
+                fraction.push(createFraction(countNumber,divider[i]));
+
             } else {
                 fraction.push(createFraction(1,divider[i]));
                 number-=divider[i];
@@ -20,7 +19,7 @@ export function calculateFraction(inputNumber) {
     }
 
     if (number !== 0){
-        fraction.push(createFraction(0,number));
+        fraction.push(createFraction(0, number));
     }
 
     return fraction;
@@ -28,7 +27,7 @@ export function calculateFraction(inputNumber) {
 
 function createFraction(count, number) {
     let fraction = {};
-    fraction.number = number;
+    fraction.number = Math.abs(number);
     fraction.count = count;
     return fraction;
 };
