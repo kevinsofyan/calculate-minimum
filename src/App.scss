@@ -1,0 +1,72 @@
+$color-main: #4FA149;
+$color-black: #5d5d5d;
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  position: relative;
+
+  .calculate-minimum {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align:  center;
+    max-width: 800px;
+    color: $color-black;
+    h1 {
+      color: $color-main;
+      margin-bottom: 40px;
+    }
+
+    form {
+      padding: 30px;
+      background: white;
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,.32);
+
+
+      .input-group {
+        margin-bottom: 20px;
+        label {
+          margin-right: 20px;
+        }
+        input {
+          border: 2px solid #e5e5e5;
+          padding: 6px;
+          border-radius: 5px;
+
+        }
+      }
+
+      .input-error {
+          margin-bottom: 20px;
+          color: red;
+      }
+
+      .input-submit {
+        background: #4FA149;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 20px;
+
+      }
+    }
+
+    .result {
+      padding: 20px;
+      background: white;
+      text-align: left;
+
+      li {
+        line-height: 1.5;
+      }
+    }
+
+  }
+
+
+}
