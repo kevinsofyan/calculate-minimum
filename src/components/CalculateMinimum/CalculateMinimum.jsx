@@ -15,10 +15,15 @@ export default class CalculateMinimum extends Component {
     }
 
     doInputChange = (event) => {
-        this.setState({inputNumber: event.target.value}, () => {
-
-        });
+        this.setState({inputNumber: event.target.value})
     };
+
+    doFormatNumber(number) {
+        const inputedNumber = number.split(",")[0];
+        const formatedNumber = Number(inputedNumber.replace(/[^0-9,-]+/g,""));
+
+        return formatedNumber;
+    }
 
     doInputSubmit = (event) => {
         event.preventDefault();
@@ -31,8 +36,9 @@ export default class CalculateMinimum extends Component {
         });
     }
 
+
     doCalculateFraction(inputNumber) {
-        const number = Number(inputNumber.replace(/[^0-9,-]+/g,""));
+        const number = this.doFormatNumber(inputNumber);
         this.setState({fraction: calculateFraction(number)})
     }
 
