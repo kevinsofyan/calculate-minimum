@@ -47,14 +47,6 @@ describe("CalculateMinimum", () => {
         expect(errorMessage.text()).toEqual('Format is incorrect');
     });
 
-    it('should error when submiting amount more than 100000', () => {
-        const number = "100001";
-        numberInput.simulate('change', {target: {value: number }});
-        form.simulate('submit', { preventDefault () {} });
-        const errorMessage = component.find('.input-error');
-        expect(errorMessage.text()).toEqual('Number cannot be more than 100000');
-    });
-
     it('should successfully calculate minimum number needed to make inputed amount', () => {
         let number = ["Rp 15000","3900","Rp 12510"];
         for (let i=0;i<number.length;i++){

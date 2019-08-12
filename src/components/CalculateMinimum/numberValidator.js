@@ -11,9 +11,6 @@ export default function numberValidator(inputNumber) {
     } else if(validateCorrectFormat(inputNumber)) {
         error.status = true;
         error.message = 'Format is incorrect'
-    } else if(validateMaxAmmount(inputNumber)) {
-        error.status = true;
-        error.message = 'Number cannot be more than 100000'
     } else {
         error.status = false;
     }
@@ -27,11 +24,3 @@ function validateCorrectFormat(val) {
     }
     return true
 }
-
-function validateMaxAmmount(val) {
-    if (val > 100000) {
-        return true;
-    }
-    return false
-}
-
